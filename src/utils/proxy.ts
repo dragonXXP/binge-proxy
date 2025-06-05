@@ -3,7 +3,10 @@ import {
   Duplex,
   ProxyOptions,
   getProxyRequestHeaders,
+  getRequestWebStream,
+  readRawBody,
   RequestHeaders,
+  sendProxy,
 } from 'h3';
 
 const PayloadMethods = new Set(['PATCH', 'POST', 'PUT', 'DELETE']);
